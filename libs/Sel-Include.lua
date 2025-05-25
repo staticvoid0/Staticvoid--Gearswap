@@ -1055,7 +1055,7 @@ function default_post_precast(spell, spellMap, eventArgs)
 					      equip(sets.Ephramads)                                                                                   
 					   elseif item_available("Cornelia's Ring") and sets.Cornelias and (not WSset.ring1 == "Cornelia's Ring" or WSset.ring2 == "Cornelia's Ring") then  
 					      equip(sets.Cornelias)
-					   elseif item_available("Lehko's Ring") and data.weaponskills.critical:contains(spell.english) and sets.Lehkos and (not WSset.ring1 == "Lehko's Ring" or WSset.ring2 == "Lehko's Ring") then
+					   elseif item_available("Lehko's Ring")  and sets.Lehkos and data.weaponskills.critical:contains(spell.english) and not (WSset.ring1 == "Lehko's Ring" or WSset.ring2 == "Lehko's Ring") then
 					      equip(sets.Lehkos)
 					   end
 					end
